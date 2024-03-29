@@ -21,9 +21,12 @@ function App() {
       <div>
         <input type="text" onChange={(e) => setSearchTerm(e.target.value)} placeholder="Search for a word..." />
         <button type="submit" onClick={handleSearch}>Search</button>
-        <h4 style={{ marginTop: "0px" }}>Definition:</h4>
+        <div>
+          <p >Definition:</p>
+          <p>{meaning}</p>
+        </div>
       </div>
-      <div><p>{meaning}</p></div>
+
     </div>
   );
 }
