@@ -19,7 +19,7 @@ function App() {
     <div >
       <h1>Dictionary App</h1>
       <div>
-        <input onChange={(e) => setSearchTerm(e.target.value)} placeholder="Search for a word..." />
+        <input type="text" onChange={(e) => setSearchTerm(e.target.value)} placeholder="Search for a word..." />
         <button type="submit" onClick={handleSearch}>Search</button>
         <h4 style={{ marginTop: "0px" }}>Definition:</h4>
       </div>
